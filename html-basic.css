@@ -1,0 +1,29 @@
+textarea {
+    resize: vertical;
+    background-color: var(--light-backgound);
+    border: 0px;
+    box-shadow: 0px 0px 5px 0px var(--base-shadow);
+    border-radius: 4px;
+    outline: none;
+    transition: 0.1s;
+    scrollbar-width: none;
+    min-height: 100px;
+    max-height: 800px;
+}
+textarea:hover {
+    box-shadow: 0px 0px 5px 1px var(--base-shadow);
+    transition: 0.1s;
+}
+textarea:focus {
+    box-shadow: 0px 0px 7px 3px var(--base-shadow);
+    transition: 0.1s;
+}
+
+input::file-selector-button {
+    background-color: var(--default-button-background);
+    color: var(--base-text-color);
+    border: 0px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px 0px var(--base-shadow);
+    margin: 3px;
+}
