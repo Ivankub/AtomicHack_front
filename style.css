@@ -1,13 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
 :root {
     --base-text-color: rgb(225, 225, 225);
     --light-backgound: rgb(50, 40, 60);
     --base-background: rgb(40, 30, 45);
     --base-shadow: rgb(100, 81, 121);
     --default-button-background: rgb(85, 50, 160);
+    --wrong-color-back: rgb(106, 27, 51);
+    --wrong-color-border: rgb(155, 114, 135);
 }
 
 * {
     color:var(--base-text-color);
+    font-family: 'Neucha', cursive;
+    letter-spacing: 1px;
+    font-size: 16pt;
 }
 
 #header {
@@ -44,6 +51,44 @@
     overflow: hidden;
     overflow-y: scroll;
     scrollbar-width: none;
+}
+
+#drag-n-drop {
+    height: 100px;
+    background-color: var(--light-backgound);
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px 0px var(--base-shadow);
+    padding: 2px;
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+
+#drag_descryption {
+    height: 50px;
+    line-height: 50px;
+    transition: 0.4s;
+}
+
+.dnd-square {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.dnd-square-l {
+    margin-right: calc(50% - 24px);
+    border-left: 8px solid var(--base-shadow);
+    
+}
+.dnd-square-r {
+    margin-left: calc(50% - 24px);
+    border-right: 8px solid var(--base-shadow);
+}
+.dnd-square-t {
+    border-top: 8px solid var(--base-shadow);
+}
+.dnd-square-b {
+    border-bottom: 8px solid var(--base-shadow);
 }
 
 .base-horizontal-margin {
@@ -88,4 +133,10 @@
 
 .header-element {
     height: 100%;
+}
+
+.wrong-element {
+    background-color: var(--wrong-color-back);
+    box-shadow: 0px 0px 5px 0px var(--wrong-color-border);
+    border-radius: 4px;
 }
